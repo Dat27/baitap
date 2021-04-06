@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thêm mới sản phẩm</title>
+</head>
+<body>
+    <h1>Thêm sản phẩm mới</h1>
+    <h3 style="color: red"><?php echo $error ?></h3>
+    <a href="index.php">Về trang danh sách</a>
+    <form action="" method="POST" enctype="multipart/form-data">
+        <br>
+        Tên sản phẩm: <br>
+        <input type="text" name="title" value=""><br>
+        Giá: <br>
+        <input type="text" name="price" value=""><br>
+        Ảnh sản phẩm: <br>
+        <input type="file" name="avatar" value=""><br>
+        Chi tiết sản phẩm: <br>
+        <textarea name="content" id="" cols="30" rows="10"></textarea> <br>
+        <input type="submit" name="submit" value="Lưu">
+        <input type="reset" name="reset" value="Reset">
+    </form>
+</body>
+</html>
